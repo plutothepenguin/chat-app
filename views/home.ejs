@@ -1,0 +1,9 @@
+<h1>home page</h1>
+
+<% for (var i = 0; i < messages.length; i++) { %>
+  <p><%= messages[i] %></p>
+<% } %>
+
+<form action="/send" method="post">
+  <input type="text" name="text" autofocus>
+</form>
